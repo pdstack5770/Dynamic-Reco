@@ -197,6 +197,7 @@ function App() {
 
         <footer className="text-center mt-8 text-slate-500 dark:text-slate-400 text-sm">
             <p>&copy; {new Date().getFullYear()} AI Reconciliation App. All rights reserved.</p>
+            <p className="mt-1 font-medium">Made by Pritesh Dobariya</p>
         </footer>
       </div>
     </div>
