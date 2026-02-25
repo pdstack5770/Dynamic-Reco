@@ -1,0 +1,6 @@
+{
+  "name": "Copy of AI-Powered Excel Reconciliation Tool",
+  "description": "An intelligent tool that reconciles two Excel files (XLSX/XLS). Features AI-powered column mapping to handle any file format and provides an AI-generated analysis of the reconciliation results. Identifies matched, partially matched, and unmatched records, with downloadable reports.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
