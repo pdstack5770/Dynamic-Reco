@@ -5,10 +5,10 @@ let ai: GoogleGenAI | null = null;
 
 function getAI() {
   if (!ai) {
-    if (!process.env.API_KEY) {
+    if (!import.meta.env.VITE_API_KEY) {
       throw new Error("API_KEY environment variable not set");
     }
-    ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    ai = new GoogleGenerativeAI({ apiKey: import.meta.env.VITE_API_KEY });
   }
   return ai;
 }
