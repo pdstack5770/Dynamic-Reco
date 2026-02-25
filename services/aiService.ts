@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import { EXPECTED_HEADERS, Remark, HeaderMap } from '../types';
 
 let ai: GoogleGenAI | null = null;
