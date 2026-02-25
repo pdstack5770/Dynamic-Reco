@@ -8,7 +8,7 @@ function getAI() {
     if (!import.meta.env.VITE_API_KEY) {
       throw new Error("VITE_API_KEY not found in env");
     }
-    ai = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
+    ai = new GoogleGenerativeAI( import.meta.env.VITE_API_KEY );
   }
   return ai;
 }
