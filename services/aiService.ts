@@ -1,18 +1,20 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { EXPECTED_HEADERS, Remark, HeaderMap } from '../types';
 
-let ai: GoogleGenAI | null = null;
+// Line 4: GoogleGenAI ko GoogleGenerativeAI kar diya
+let ai: GoogleGenerativeAI | null = null;
 
 function getAI() {
   if (!ai) {
-    if (!import.meta.env.VITE_API_KEY) {
+    const key = import.meta.env.VITE_API_KEY;
+    if (!key) {
       throw new Error("VITE_API_KEY not found in env");
     }
-    ai = new GoogleGenerativeAI({ import.meta.env.VITE_API_KEY });
+    // Line 11: Curly brackets {} hata diye hain
+    ai = new GoogleGenerativeAI(key);
   }
   return ai;
 }
-
 export async function getColumnMapping(fileHeaders: string[]): Promise<HeaderMap> {
   const model = getAI().models;
 
