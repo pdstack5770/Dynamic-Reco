@@ -6,9 +6,9 @@ let ai: GoogleGenAI | null = null;
 function getAI() {
   if (!ai) {
     if (!import.meta.env.VITE_API_KEY) {
-      throw new Error("API_KEY environment variable not set");
+      throw new Error("VITE_API_KEY not found in env");
     }
-    ai = new GoogleGenerativeAI({ apiKey: import.meta.env.VITE_API_KEY });
+    ai = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
   }
   return ai;
 }
