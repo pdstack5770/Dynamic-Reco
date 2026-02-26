@@ -14,8 +14,8 @@
     "@google/generative-ai": "latest"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",  // ✅ yaha bhi typo tha
-    "@vitejs/plugin-react": "^5.0.0",  // ✅ yaha bhi @ lagao
+   "@types/node": "^22.14.0",
+"@vitejs/plugin-react": "^5.0.0",
     "typescript": "^5.8.2",
     "vite": "^6.2.0"
   }
